@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import data from "../data.json";
 import { Link } from "react-router-dom";
-
+import { ButtonOrange } from "../../../components/globals/Button";
 const ServiceData = data.service;
 
 class Services extends Component {
@@ -19,18 +19,20 @@ class Services extends Component {
                     <div className="flip-card-inner ">
                       <div className="flip-card-front p-5 d-flex-column align-items-center   ">
                         <div>
-                          {" "}
                           <img src={service.icon} alt="" className="w-75" />
                         </div>
                         <h5 className="text-capitalize subsubtitle text-darkblue my-auto ">
-                          {service.title}
+                          <strong> {service.title}</strong>
                         </h5>
                       </div>
-                      <div className="flip-card-back text-capitalize p-5 d-flex-column align-items-center justify-content-center">
-                        <div> {service.content.replace(/(\n)/g)}</div>
+                      <div className="flip-card-back text-capitalize p-5 d-flex flex-column align-items-stretch justify-content-center">
+                        <p className="">{service.content.replace(/(\n)/g)}</p>
                         <div className="mt-3">
                           {service.link.length > 0 ? (
-                            <Link to={service.link}>Know More</Link>
+                            <Link to={service.link}>
+                              {" "}
+                              <ButtonOrange>Know More </ButtonOrange>
+                            </Link>
                           ) : (
                             ""
                           )}
@@ -78,10 +80,11 @@ const ServiceContainer = styled.div`
     color: black;
   }
   .flip-card-back {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background-color: var(--brightBlue);
-    color: white;
+    color: var(--mainWhite);
+    font-weight: 100 !important;
     border-radius: 5%;
     transform: rotateY(180deg);
   }

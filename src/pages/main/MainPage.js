@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 import HowtoStart from "./Sections/HowtoStart";
 import WhyMedx from "./Sections/WhyMedx";
 import Services from "./Sections/Services";
+import Review from "./Sections/Review";
 import BannerText from "./BannerText";
 const sliders = [
   "images/slider1.png",
@@ -31,6 +32,7 @@ class MainPage extends Component {
         <ScrollableAnchor id={"service"}>
           <Services />
         </ScrollableAnchor>
+        <Review />
       </div>
     );
   }

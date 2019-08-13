@@ -74,9 +74,9 @@
     },
     {
       "title": "personal injury",
-      "content": "We pride ourselves in delivering premium services. That service extends to your door. If you can’t come to us, we’ll see that the products you need are delivered right to your home.",
+      "content": " If you were injured in a serious car accident, please call 713-526-1212 or visit 3033 Fannin St, Houston, TX 77004. Our personal injury partner Houston Medical Group will take care of you",
       "link": "",
-      "icon": "images/icons/delivery.png"
+      "icon": "images/icons/injury.png"
     },
     {
       "title": "compounding",
@@ -101,6 +101,20 @@
       "content": "CBD, or cannobidiol, offers many health benefit",
       "link": "/cbd",
       "icon": "images/icons/cbd.png"
+    }
+  ],
+  "review": [
+    {
+      "name": "Trung Nguyen",
+      "content": "Thank You for saving our baby's life with your promptness and diligence. We are eternally grateful."
+    },
+    {
+      "name": "Arthur Huckaby",
+      "content": "They were very helpful with locating a wheelchair for my Mother and worked with us to get the best deal with the insurance company. Even though we do not live near them any longer, we still drive across town because of the service we received. Much better than the other location that we had used for a long time."
+    },
+    {
+      "name": "Bonnie Kass",
+      "content": "Excellent customer service and follow up. The staff is very professional and courteous. It was a pleasure working with them."
     }
   ]
 }

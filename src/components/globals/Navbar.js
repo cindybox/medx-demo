@@ -47,9 +47,9 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse my-2" id="navbarTogglerList">
             <ul className="navbar-nav ml-lg-auto mr-lg-5 mt-2 mt-lg-0 d-flex align-items-center">
               <li className="nav-item ml-lg-5">
-                <a href="/aboutus" className="nav-link  text-center">
+                <Link to="/aboutus" className="nav-link  text-center">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item ml-lg-5">
                 <a href="/#howtostart" className="nav-link  text-center">
@@ -62,9 +62,9 @@ class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item ml-lg-5">
-                <a href="/event" className="nav-link  text-center">
+                <Link to="/event" className="nav-link  text-center">
                   Events
-                </a>
+                </Link>
               </li>
               <li className="nav-item ml-lg-5">
                 <Link to="/refillrx">
@@ -85,6 +85,7 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
+  z-index: 99;
   background: ${props =>
     props.location === "aboutus" ? "var(--lightblue)" : "var(--lightestBlue)"};
   li:hover {
