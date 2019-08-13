@@ -1,0 +1,106 @@
+{
+  "howtostart": {
+    "new": [
+      {
+        "step": "1",
+        "title": "Tell your doctor",
+        "content": "Ask your doctor to send e-script for fax to MedX Pharmacy"
+      },
+      {
+        "step": "2",
+        "title": "We will contact you",
+        "content": "We will contact you to set up delivery or pick up for your medicine"
+      }
+    ],
+    "refill": [
+      {
+        "step": "1",
+        "title": "fill out the form",
+        "content": "complete the <a href='/refillrx'>form</a> with the needed information"
+      },
+      {
+        "step": "2",
+        "title": "fill out the form",
+        "content": "We will contact you to set up delivery or pick up for your medicine"
+      }
+    ],
+
+    "transfer": [
+      {
+        "step": "1",
+        "title": "fill out the form",
+        "content": "complete the <a href='/transferrx'>form</a> with the needed information"
+      },
+
+      {
+        "step": "2",
+        "title": "fill out the form",
+        "content": "We will call yourpharmacy to complete the transfer and then contact you to set up delivery or pick up for your medicine"
+      }
+    ]
+  },
+  "whymedx": [
+    {
+      "title": "we are affordable",
+      "content": "We’re not just more affordable compared to other pharmacies—we’re truly dedicated to giving you exactly what you need at a price that won’t hurt your pocket."
+    },
+    {
+      "title": "Same-Day Delivery",
+      "content": "On the same day you order your medication, we’ll be able to deliver it directly to your doorstep."
+    },
+    {
+      "title": "Patient Consultations",
+      "content": "If you have any concerns regarding your medication, then you can meet with one of our pharmacists for a free consultation."
+    },
+    {
+      "title": "$3 Prescriptions",
+      "content": "With our 3-dollar prescriptions, you do not have to worry about not having insurance. You can get the medication you need at a good price."
+    },
+    {
+      "title": "Education Program",
+      "content": "We will organize educational seminars to help improve your knowledge about your medications"
+    },
+    {
+      "title": "Personalized Compounding",
+      "content": "Our pharmacists are trained in creating formulations that fit your exact needs and preferences."
+    }
+  ],
+  "service": [
+    {
+      "title": "free delivery",
+      "content": "We pride ourselves in delivering premium services. That service extends to your door. If you can’t come to us, we’ll see that the products you need are delivered right to your home.",
+      "link": "",
+      "icon": "images/icons/delivery.png"
+    },
+    {
+      "title": "personal injury",
+      "content": "We pride ourselves in delivering premium services. That service extends to your door. If you can’t come to us, we’ll see that the products you need are delivered right to your home.",
+      "link": "",
+      "icon": "images/icons/delivery.png"
+    },
+    {
+      "title": "compounding",
+      "content": "compounding is delivery personal care that is suited to your needs",
+      "link": "/compounding",
+      "icon": "images/icons/compounding.png"
+    },
+    {
+      "title": "discount program",
+      "content": "- $3 generics, check HERE for a list \n- special discounts for members \n- be the first to know special offers and events",
+      "link": "",
+      "icon": "images/icons/discount.png"
+    },
+    {
+      "title": "Hospice & senior care",
+      "content": "Our hospice team focuses on providing physical support such as pain management, as well as emotional, social, and spiritual support",
+      "link": "/hospice",
+      "icon": "images/icons/senior.png"
+    },
+    {
+      "title": "CBD",
+      "content": "CBD, or cannobidiol, offers many health benefit",
+      "link": "/cbd",
+      "icon": "images/icons/cbd.png"
+    }
+  ]
+}

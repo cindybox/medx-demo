@@ -1,0 +1,207 @@
+{
+  "women's health": {
+    "desc": "Custom compounding solutions can assist with women’s health issues of all ages. MedX Pharmacy has the ability to customize medications for women’s health that include: ",
+    "ingredients": {
+      "Pregnancy": ["Ginger Root", "Promethazine", "Chorionic Gonadotropin"],
+      "Weight Loss": [
+        "Phentermine",
+        "Chromium Picolinate",
+        "Chorionic Gonadotropin"
+      ],
+      "Vaginal": [
+        "Metronidazole",
+        "Boric Acid",
+        "Clotrimazole",
+        "Hydroxyquinoline Sulfate",
+        "Diazepam",
+        "Progesterone"
+      ],
+      "Weight Loss": [
+        "Phentermine",
+        "Chromium Picolinate",
+        "Chorionic Gonadotropin"
+      ],
+      "Female Sexual Dysfunction & Low Libido": [
+        "Testosterone",
+        "Estriol",
+        "Sildenafil",
+        "Dehydroepiandrosterone",
+        "Oxytocin",
+        "Vitamin E"
+      ],
+      "BHRT": ["Progeterone", "Estriol", "Estradiol", "Testosterone"]
+    }
+  },
+
+  "men's health": {
+    "desc": "MedX pharmacy can help with many health issues that affect men of all ages. Many men have concerns about:",
+    "ingredients": {
+      "Restoring Hormonal": [
+        "Testosterone",
+        "Anastrozole",
+        "Pregnenolone",
+        "Progesterone"
+      ],
+      "Erectile Dysfunction": ["Sildenafil", "Tadalafil"],
+      "Sweating / Body Odor": ["Glycopyrrolate"],
+      "Hemorrhoids": ["Lidocaine", "Pramoxine", "Hydrocortisone", "Aloe Vera"]
+    }
+  },
+
+  "dermatology": {
+    "desc": "MedX Pharmacy offers dermatology compounding services. MedX can work one on one with your physician to create a personalized medication to fit your skin care needs. Our customized compounded medications can treat:",
+    "ingredients": {
+      "Rosacea": [
+        "Niacinamide",
+        "Ketotifen",
+        "Metronidazole",
+        "Oxymetazoline",
+        "Niacinamide"
+      ],
+      "Psoriasis / Eczema": [
+        "Zinc Pyrithione",
+        "Tacolimus",
+        "Cyanocobalamin",
+        "Ketotifen",
+        "Coal Tar",
+        "Clobetasol",
+        "Anthralin"
+      ],
+      "Acne": [
+        "Azelaic Acid",
+        "Clindamycin",
+        "Dismutase",
+        "Sulfacetamide",
+        "Tretinoin",
+        "Benzoyl Peroxide",
+        "Salicylic Acid"
+      ],
+      "Warts": [
+        "Cimetidine",
+        "Flurouracil",
+        "Imiquimod",
+        "Salicylic Acid",
+        "Squaric Acid",
+        "Cantharidin"
+      ],
+      "Nail Fungus": ["Itraconazole", "Terbinafine", "Ketoconazole", "Thymol"],
+      "Skin Bleaching / Lightening": [
+        "Hydroquinone",
+        "Tretinoin",
+        "Kojic Acid",
+        "Hydrocortisone",
+        "Fluocinolone",
+        "Triamcinolone"
+      ],
+      "Hair Loss": ["Minoxidil", "Finasteride", "Azelaic Acid"],
+      "Wound": [
+        "Misoprostol",
+        "Metronidazole",
+        "Lidocaine",
+        "Phenytion",
+        "Mupirocin",
+        "Vancomycin"
+      ],
+      "Scar Therapy": [
+        "Betamethason",
+        "Pracasil",
+        "Tamoxifen",
+        "Tranilist",
+        "Fluticasone",
+        "Pentoxifylline",
+        "Urea",
+        "Aloe Vera",
+        "Collagen"
+      ]
+    }
+  },
+
+  "pain management": {
+    "desc": "Compounded pain creams, gels, sprays, and ointments are now helping reduce pain. When you are in everyday pain it can disrupt your life. MedX Pharmacy wants to help you create a pain relief that works for you. Whatever formula you need we can work with your doctor to get you relief.  Most common types of pain:",
+    "ingredients": {
+      "Inflamation": ["Ketoprofen", "Ibuprofen", "Piroxicam", "Diclofenac"],
+      "Neuropathic Pain": [
+        "Ketamin",
+        "Gabapentin",
+        "Baclofen",
+        "Clonidine",
+        "Amitriptyline",
+        "Flurbiprofen"
+      ],
+      "Muscle Spasm": ["Cyclobenzaprine", "Ketoprofen"],
+      "Migraine": [
+        "Sumatriptan",
+        "Meloxicam",
+        "Topiramate",
+        "Tramadol",
+        "Indomethacin",
+        "Riboflavin",
+        "Caffeine"
+      ]
+    }
+  },
+
+  "podiatry": {
+    "desc": "Podiatrist and other healthcare professions encounter many issues that compounded medications can help resolve. MedX Pharmacy can create unique formulas with the physician to meet the patients needs. Some common issues:",
+    "ingredients": {
+      "Nail Fungus": ["Itraconazole", "Fluconazole", "Ciclopirox"],
+      "Fungal Infection": ["Ketoconazole", "Clotrimazole"],
+      "Diabetic Neuropathy & Heel Spur": [
+        "Ketamine",
+        "Gabapentin",
+        "Clonidine",
+        "Nifedipine",
+        "Amitriptyline",
+        "Tizanidine"
+      ],
+      "Foot Cramps": ["Guaifenesin", "Ketoprofen", "Magnesium Chloride"],
+      "Plantar Fasciitis": [
+        "Flurbiprofen",
+        "Piroxicam",
+        "Lidocaine",
+        "Tramadol",
+        "Gabapentin",
+        "Prilocaine",
+        "Diclofenac",
+        "Capsaicin"
+      ],
+      "Corns / Callouses": [
+        "Salicylic Acid",
+        "Podophyyllum",
+        "Menthol",
+        "Urea",
+        "Ammonium Lactate"
+      ],
+      "Warts": ["Imiquimod", "Cimetidine", "Fluorouracil", "Salicylic Acid"]
+    }
+  },
+
+  "veterinary": {
+    "desc": "Animals are a part of the family and at MedX Pharmacy we understand the importance of your pet.  When your pet is sick you want the best possible treatment. We can work together with the veterinarian to help create a custom medication that fits your pet’s needs. Medications that can be compounded are, but not limited:",
+    "ingredients": {
+      "": [
+        " Clomipramine",
+        "Fluoxetine",
+        "Amitriptyline",
+        "Phenobarbital",
+        "Levetiracetam",
+        "Diethylstilbestrol",
+        "Phenylpropanolamine",
+        "Diphenhydramin",
+        "Gentamicin",
+        "Itraconazol",
+        "Nystatin",
+        "Ciprofloxacin",
+        "Betamethasone",
+        "Ketoconazole",
+        "Acepromazine",
+        "Enalapril",
+        "Atenolol",
+        "Cyproheptadine",
+        "Pioxicam",
+        "Methimazole",
+        "Zonisamide"
+      ]
+    }
+  }
+}
