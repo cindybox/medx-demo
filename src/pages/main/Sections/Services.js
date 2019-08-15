@@ -13,25 +13,29 @@ class Services extends Component {
           <div className="row section-lightblue py-5">
             <div className="col-9 mx-auto section-title ">what do we do</div>
             <div className="col-9 mx-auto">
-              <div className=" row d-flex justify-content-center  mt-5 ">
+              <div className=" row col-lg-12 col-xl-10 mx-auto d-flex justify-content-between  mt-5 ">
                 {ServiceData.map(service => (
-                  <div className="flip-card text-center col-12 col-md-3 mx-4 my-4 ">
-                    <div className="flip-card-inner ">
-                      <div className="flip-card-front p-5 d-flex-column align-items-center   ">
-                        <div>
-                          <img src={service.icon} alt="" className="w-75" />
-                        </div>
+                  <div className="flip-card  mx-auto col-12 col-sm-10 col-md-6 col-lg-6 col-xl-4 my-3 ">
+                    <div className="flip-card-inner  ">
+                      <div className="flip-card-front p-lg-5 p-md-3 p-sm-2 d-flex flex-column align-items-center  justify-content-center ">
+                        <img
+                          src={service.icon}
+                          alt=""
+                          className="w-75 service-icon"
+                        />
+
                         <h5 className="text-capitalize subsubtitle text-darkblue my-auto ">
                           <strong> {service.title}</strong>
                         </h5>
                       </div>
-                      <div className="flip-card-back text-capitalize p-5 d-flex flex-column align-items-stretch justify-content-center">
+                      <div className="flip-card-back text-capitalize p-lg-4 p-md-2 p-sm-1 d-flex flex-column align-items-stretch justify-content-center">
                         <p className="">{service.content.replace(/(\n)/g)}</p>
                         <div className="mt-3">
                           {service.link.length > 0 ? (
                             <Link to={service.link}>
-                              {" "}
-                              <ButtonOrange>Know More </ButtonOrange>
+                              <ButtonOrange>
+                                <h6>Know More</h6>
+                              </ButtonOrange>
                             </Link>
                           ) : (
                             ""
@@ -53,6 +57,7 @@ class Services extends Component {
 const ServiceContainer = styled.div`
   .flip-card {
     height: 20rem;
+
     perspective: 60rem;
     background: transparent;
   }
@@ -103,5 +108,25 @@ const ServiceContainer = styled.div`
     curser: pointer;
     display: block !important;
   } */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .flip-card-back {
+      padding: 5%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  }
+
+  /*
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+
+    */
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 export default Services;

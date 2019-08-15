@@ -81,7 +81,9 @@ const BannerWrapper = styled.div`
     left: 0;
     right: 0;
   }
-
+  .banner-clocksm {
+    width: 10%;
+  }
   /*========================== media query ============================*/
   @media (min-width: 1680px) {
     .imagecontainer img {
@@ -103,12 +105,6 @@ const BannerWrapper = styled.div`
   }
   /*ipad*/
   @media (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-      font-size: 3.4rem;
-    }
-    h2 {
-      font-size: 1.4rem;
-    }
     i {
       font-size: 2.8rem;
     }
@@ -123,12 +119,7 @@ const BannerWrapper = styled.div`
       margin-top: 25%;
       width: 110%;
     }
-    h2 {
-      font-size: 1.4rem;
-    }
-    h1 {
-      font-size: 3.4rem;
-    }
+
     i {
       font-size: 2.8rem;
     }
@@ -139,41 +130,25 @@ const BannerWrapper = styled.div`
       margin-top: 40%;
       width: 120%;
     }
-    .bannercontent {
+
+    /* .bannercontent {
       text-align: center;
-    }
-    h1 {
-      font-size: 2.4rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
+    } */
+
     i {
       font-size: 2rem;
     }
   }
 
-  /*
-      ##Device = Most of the Smartphones Mobiles (Portrait)
-
-    */
-
   @media (min-width: 320px) and (max-width: 480px) {
     .bannercontent {
       text-align: center;
     }
-    h1 {
-      font-size: 2.4rem;
+    .clock-container,
+    d-flex {
+      justify-content: center !important;
     }
-    h2 {
-      font-size: 1.2rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
+
     i {
       font-size: 2rem;
     }

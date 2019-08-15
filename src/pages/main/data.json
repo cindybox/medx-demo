@@ -20,8 +20,13 @@
       },
       {
         "step": "2",
-        "title": "fill out the form",
+        "title": "We will contact you",
         "content": "We will contact you to set up delivery or pick up for your medicine"
+      },
+      {
+        "step": "3",
+        "title": "You will receive your medication",
+        "content": "your orders will be confirmed and be delivered to your doorstep or ready for pickup"
       }
     ],
 
@@ -34,8 +39,13 @@
 
       {
         "step": "2",
-        "title": "fill out the form",
-        "content": "We will call yourpharmacy to complete the transfer and then contact you to set up delivery or pick up for your medicine"
+        "title": "we will contact you",
+        "content": "We will call your pharmacy to complete the transfer and then contact you to set up delivery or pick up for your medicine"
+      },
+      {
+        "step": "3",
+        "title": "You will receive your medication",
+        "content": "your orders will be confirmed and be delivered to your doorstep or ready for pickup"
       }
     ]
   },

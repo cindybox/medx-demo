@@ -7,7 +7,7 @@ export const ButtonOrange = styled.button`
   color: var(--mainWhite) !important;
   border-radius: 99999px !important;
   text-transform: capitalize;
-  width: 10rem;
+  width: 7rem;
   &:hover {
     background: var(--darkBlue) !important;
   }

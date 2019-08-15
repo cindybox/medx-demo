@@ -33,19 +33,20 @@ body {
   font-size: 4.4rem;
   color: var(--darkBlue) !important;
 }
-.text-header3 {
-  font-size: 1.4rem;
-}
+
 .text-header2 {
   font-weight: 700;
   font-style: medium;
   line-height: 180% !important;
   font-size: 1.6rem;
 }
+.text-header3 {
+  font-size: 1.4rem;
+}
 .section-title {
   color: var(--darkBlue);
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .form-title {
@@ -78,44 +79,83 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 /*========================== media query ============================*/
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
+@media (min-width: 1680px) {
+}
+@media (min-width: 1281px) and (max-width: 1680px) {
+}
 @media (min-width: 1025px) and (max-width: 1280px) {
-   {
+  .text-header1 {
+    font-size: 3.5rem !important;
+  }
+  .text-header2 {
+    font-size: 1.4rem;
+  }
+  .text-header3 {
+    font-size: 1.2rem;
   }
 }
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
+/*ipad*/
 @media (min-width: 768px) and (max-width: 1024px) {
-   {
+  .text-header1 {
+    font-size: 3.5rem !important;
+  }
+  .text-header2 {
+    font-size: 1.4rem;
+  }
+  .text-header3 {
+    font-size: 1.2rem;
   }
 }
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .text-header1 {
+    font-size: 3.5rem !important;
+  }
+  .text-header2 {
+    font-size: 1.4rem;
+  }
+  .text-header3 {
+    font-size: 1.2rem;
+  }
+  .section-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .text-header1 {
+    font-size: 2.4rem;
+  }
+  .text-header2 {
+    font-size: 1.2rem;
+  }
+  .text-header3 {
+    font-size: 1rem;
+  }
+  .service-icon {
+    width: 50% !important;
+  }
+  .section-title {
+    font-size: 2.4rem;
+  }
 }
 
 /*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+    ##Device = Most of the Smartphones Mobiles (Portrait)
 
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .text-header1 {
+    font-size: 2.4rem;
+  }
+  .text-header2 {
+    font-size: 1.2rem;
+  }
+  .text-header3 {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 767px) {
   .section-title {
     font-size: 2rem;

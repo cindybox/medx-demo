@@ -46,32 +46,33 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse my-2" id="navbarTogglerList">
             <ul className="navbar-nav ml-lg-auto mr-lg-5 mt-2 mt-lg-0 d-flex align-items-center">
-              <li className="nav-item ml-lg-5">
+              <li className="nav-item ml-lg-3">
                 <Link to="/aboutus" className="nav-link  text-center">
                   About Us
                 </Link>
               </li>
-              <li className="nav-item ml-lg-5">
+              <li className="nav-item ml-lg-3">
                 <a href="/#howtostart" className="nav-link  text-center">
                   How to Start
                 </a>
               </li>
-              <li className="nav-item ml-lg-5">
+              <li className="nav-item ml-lg-3">
                 <a href="/#service" className="nav-link  text-center">
                   Services
                 </a>
               </li>
-              <li className="nav-item ml-lg-5">
+              <li className="nav-item  ml-lg-3 ">
                 <Link to="/event" className="nav-link  text-center">
                   Events
                 </Link>
               </li>
-              <li className="nav-item ml-lg-5">
+
+              <li className="nav-item ml-lg-3  ">
                 <Link to="/refillrx">
                   <ButtonOrange> Refill RX </ButtonOrange>
                 </Link>
               </li>
-              <li className=" nav-item ml-lg-5">
+              <li className="nav-item ml-lg-3  ">
                 <Link to="/transferrx">
                   <ButtonOrange> Transfer RX </ButtonOrange>
                 </Link>

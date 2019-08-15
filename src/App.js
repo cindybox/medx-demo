@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import Event from "./pages/Event";
 import CBD from "./pages/CBD";
 import Hospice from "./pages/Hospice";
+import ThreeDollar from "./pages/ThreeDollar";
 
 class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
         <Route exact path="/event" render={() => <Event />} />
         <Route exact path="/hospice" render={() => <Hospice />} />
         <Route exact path="/cbd" render={() => <CBD />} />
+        <Route exact path="/3dollar" render={() => <ThreeDollar />} />
 
         <Footer />
       </React.Fragment>

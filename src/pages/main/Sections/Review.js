@@ -9,13 +9,17 @@ const Review = () => (
       <div className="col-9 mx-auto">
         <div className="row">
           {ReviewData.map(d => (
-            <div className="col-auto mx-auto col-md-4">
-              <div
-                className="card mx-1 my-3 shadow px-5 pt-5"
-                style={{ height: "22rem" }}
-              >
-                <h6 className="subtitle text-darkblue mb-4">
+            <div className="col-auto mx-auto col-12 col-sm-10 col-md-6 col-lg-6 col-xl-4">
+              <div className="card mx-1 mt-3 shadow p-4">
+                <h6 className="subtitle text-darkblue mb-2">
                   <strong> {d.name}</strong>
+                </h6>
+                <h6
+                  className="text-darkblue mb-4"
+                  style={{ fontSize: "14px", fontWeight: "100" }}
+                >
+                  {" "}
+                  Houston, TX
                 </h6>
                 <p> {d.content}</p>
               </div>
