@@ -1,17 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ReactHtmlParser, {
-  processNodes,
-  convertNodeToElement,
-  htmlparser2
-} from "react-html-parser";
-export const PillContent = steps => (
+
+import ReactHtmlParser from "react-html-parser";
+
+export const PillContent = (steps) => (
   <div className="row d-flex justify-content-center mt-5 mx-auto ">
-    {steps.map(step => {
+    {steps.map((step) => {
       let keys = Object.keys(step);
 
       return (
-        <div className="card text-center px-3 py-5 col-8 col-md-4 col-lg-3 my-5 mx-5 border rounded">
+        <div className="card text-center px-3 py-2 py-md-3 py-lg-5 col-10 col-md-9 col-lg-3 mb-5 mx-1 mx-md-2 mx-lg-3 border rounded">
           <h3 className="text-uppercase subtitle text-orange ">
             <strong> step {step[keys[0]]}</strong>
           </h3>

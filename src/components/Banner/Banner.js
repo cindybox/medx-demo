@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import BannerText from "./BannerText";
 import classNames from "classnames";
 import styled from "styled-components";
 
@@ -23,11 +22,11 @@ class Banner extends Component {
       {this.props.sliders.map((item, index) => (
         <div
           className={classNames("carousel-item", {
-            active: this.props.isClicked[index]
+            active: this.props.isClicked[index],
           })}
         >
           <div className="imagecontainer ">
-            <img src={item} />
+            <img src={item} alt="promo" />
           </div>
 
           {this.props.BannerText[index]}
@@ -87,7 +86,6 @@ const BannerWrapper = styled.div`
   /*========================== media query ============================*/
   @media (min-width: 1680px) {
     .imagecontainer img {
-      /* margin-top: 8%; */
       width: 100%;
     }
   }
@@ -103,7 +101,7 @@ const BannerWrapper = styled.div`
       width: 105%;
     }
   }
-  /*ipad*/
+
   @media (min-width: 768px) and (max-width: 1024px) {
     i {
       font-size: 2.8rem;
@@ -131,16 +129,12 @@ const BannerWrapper = styled.div`
       width: 120%;
     }
 
-    /* .bannercontent {
-      text-align: center;
-    } */
-
     i {
       font-size: 2rem;
     }
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 480px) {
     .bannercontent {
       text-align: center;
     }
@@ -150,11 +144,15 @@ const BannerWrapper = styled.div`
     }
 
     i {
-      font-size: 2rem;
+      font-size: 1rem;
     }
 
     .imagecontainer img {
       width: 130%;
+    }
+
+    .text-header3 {
+      text-align: left;
     }
   }
 `;

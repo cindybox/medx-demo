@@ -4,9 +4,13 @@ import { ButtonStep } from "../globals/Button.js";
 
 export const PillTab = ({ PatientTypes, isActive, toggleTab, style }) => (
   <div className="row mx-auto mt-5">
-    <ul class="nav nav-pills mb-3 mx-auto " id="pills-tab" role="tablist">
+    <ul
+      class="nav nav-pills mb-3 mx-auto d-flex justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
       {PatientTypes.map((type, index) => (
-        <li class="nav-item mx-auto">
+        <li class="nav-item">
           <ButtonStep
             isActive={isActive[index]}
             onClick={() => {

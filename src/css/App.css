@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@400;700&display=swap");
+
 :root {
   --mainWhite: #ffffff;
   --mainGrey: #636363;
@@ -15,37 +17,38 @@
   outline: none !important;
 }
 body {
-  font-family: "Poppins", sans-serif, "Playfair Display", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: regular;
   background: var(--lightestBlue) !important;
   color: var(--mainGrey);
   list-style: none !important;
 }
-.section-lightblue {
-}
+
 .section-darkblue {
   background: var(--lightBlue);
 }
 
 /*=====================================text==================================*/
 .text-header1 {
-  font-family: "Playfair Display, sans-serif";
-  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
   font-size: 4.4rem;
+  letter-spacing: 1px;
   color: var(--darkBlue) !important;
 }
 
 .text-header2 {
-  font-weight: 700;
+  font-weight: 400;
   font-style: medium;
-  line-height: 180% !important;
-  font-size: 1.6rem;
+  line-height: 120% !important;
+  font-size: 1.35rem;
 }
 .text-header3 {
   font-size: 1.4rem;
 }
 .section-title {
   color: var(--darkBlue);
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -79,50 +82,14 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 /*========================== media query ============================*/
-@media (min-width: 1680px) {
-}
-@media (min-width: 1281px) and (max-width: 1680px) {
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
+
+@media (max-width: 480px) {
   .text-header1 {
-    font-size: 3.5rem !important;
-  }
-  .text-header2 {
-    font-size: 1.4rem;
-  }
-  .text-header3 {
-    font-size: 1.2rem;
-  }
-}
-/*ipad*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .text-header1 {
-    font-size: 3.5rem !important;
-  }
-  .text-header2 {
-    font-size: 1.4rem;
-  }
-  .text-header3 {
-    font-size: 1.2rem;
+    font-size: 2rem !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .text-header1 {
-    font-size: 3.5rem !important;
-  }
-  .text-header2 {
-    font-size: 1.4rem;
-  }
-  .text-header3 {
-    font-size: 1.2rem;
-  }
-  .section-title {
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 768px) {
   .text-header1 {
     font-size: 2.4rem;
   }
@@ -132,37 +99,18 @@ body {
   .text-header3 {
     font-size: 1rem;
   }
-  .service-icon {
-    width: 50% !important;
-  }
-  .section-title {
-    font-size: 2.4rem;
-  }
-}
-
-/*
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .text-header1 {
-    font-size: 2.4rem;
-  }
-  .text-header2 {
-    font-size: 1.2rem;
-  }
-  .text-header3 {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 767px) {
   .section-title {
     font-size: 2rem;
   }
 }
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+@media (min-width: 768px) and (max-width: 1280px) {
+  .text-header1 {
+    font-size: 3.5rem !important;
+  }
+  .text-header2 {
+    font-size: 1.4rem;
+  }
+  .text-header3 {
+    font-size: 1.2rem;
+  }
+}

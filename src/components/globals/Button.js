@@ -29,12 +29,12 @@ export const ButtonSubmit = styled.button`
 `;
 
 export const ButtonStep = styled.button`
-  background: ${props =>
+  background: ${(props) =>
     props.isActive ? "var(--brightOrange)" : props.background};
-  font-size: ${props => props.fontsize};
-  width: ${props => props.width};
-  padding: 10%;
-  border: ${props =>
+  font-size: ${(props) => props.fontsize};
+  width: ${(props) => props.width};
+  padding: 0.4em;
+  border: ${(props) =>
     props.isActive
       ? "1px var(--brightOrange) solid"
       : "1px var(--darkBlue) solid"};
@@ -45,7 +45,7 @@ export const ButtonStep = styled.button`
 
   a {
     positioin: relative;
-    color: ${props =>
+    color: ${(props) =>
       props.isActive ? "var(--mainWhite)" : "var(--darkBlue)"};
     &:hover {
       text-decoration: none !important;
@@ -56,7 +56,7 @@ export const ButtonStep = styled.button`
     border: none !important;
   }
   &:hover {
-    background: ${props =>
+    background: ${(props) =>
       props.isActive ? "var(--brightOrange)" : "var(--mutedOrange)"};
     border: none !important;
   }
@@ -72,7 +72,7 @@ export const ButtonStep = styled.button`
     position: absolute;
     top: 100%;
     left: 42%;
-    border-top: ${props =>
+    border-top: ${(props) =>
       props.isActive
         ? "1rem var(--brightOrange) solid"
         : "1rem transparent solid"};

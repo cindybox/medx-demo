@@ -9,12 +9,14 @@ class Services extends Component {
   render() {
     return (
       <ServiceContainer>
-        <div className="container-fluid section-darkblue py-5">
-          <div className="row section-lightblue py-5">
-            <div className="col-9 mx-auto section-title ">what do we do</div>
-            <div className="col-9 mx-auto">
+        <div className="container-fluid section-darkblue py-2 py-lg-5">
+          <div className="row section-lightblue py-2 py-lg-5">
+            <div className="col-11 col-sm-10 col-md-9 mx-auto section-title ">
+              what do we do
+            </div>
+            <div className="col-11 col-sm-10 mx-auto">
               <div className=" row col-lg-12 col-xl-10 mx-auto d-flex justify-content-between  mt-5 ">
-                {ServiceData.map(service => (
+                {ServiceData.map((service) => (
                   <div className="flip-card  mx-auto col-12 col-sm-10 col-md-6 col-lg-6 col-xl-4 my-3 ">
                     <div className="flip-card-inner  ">
                       <div className="flip-card-front p-lg-5 p-md-3 p-sm-2 d-flex flex-column align-items-center  justify-content-center ">
@@ -24,7 +26,7 @@ class Services extends Component {
                           className="w-75 service-icon"
                         />
 
-                        <h5 className="text-capitalize subsubtitle text-darkblue my-auto ">
+                        <h5 className="text-capitalize subsubtitle text-darkblue my-1 my-md-3 my-lg-5 ">
                           <strong> {service.title}</strong>
                         </h5>
                       </div>

@@ -2,19 +2,18 @@ import React, { Component } from "react";
 import classNames from "classnames";
 import styled from "styled-components";
 import { PillTab } from "../../components/Tab/PillTab";
-import { PillContentContainer } from "../../components/Tab/PillContentContainer";
 
 import data from "./data.json";
 const types = Object.keys(data);
-let isActiveInit = types.map(t => false);
+let isActiveInit = types.map((t) => false);
 isActiveInit[0] = true;
 
 class Ingredient extends Component {
   state = { isActive: isActiveInit, tab: "", subtab: "" };
 
-  toggleTab = tab => {
+  toggleTab = (tab) => {
     let index = types.indexOf(tab);
-    let tempActive = types.map(t => false);
+    let tempActive = types.map((t) => false);
     tempActive[index] = true;
     this.setState({ isActive: tempActive });
   };
@@ -40,7 +39,7 @@ class Ingredient extends Component {
                 style={{
                   fontsize: "1rem",
                   width: "12rem",
-                  background: "var(--lightBlue)"
+                  background: "var(--lightBlue)",
                 }}
               />
 
@@ -52,7 +51,7 @@ class Ingredient extends Component {
                   <div
                     className={classNames("tab-pane", "pane", {
                       active: this.state.isActive[index],
-                      show: this.state.isActive[index]
+                      show: this.state.isActive[index],
                     })}
                     id={`#pills-${type}`}
                     role="tabpanel"
@@ -64,10 +63,10 @@ class Ingredient extends Component {
                         <strong> Categories:</strong>
                       </h4>
                       <div className="row ">
-                        {Object.keys(data[type].ingredients).map(k => (
+                        {Object.keys(data[type].ingredients).map((k) => (
                           <h5
                             className="text-darkblue subsubtitle col-auto col-md-6 my-3 subtab"
-                            onClick={e => {
+                            onClick={(e) => {
                               this.toggleSubTab(e, type, k);
                             }}
                           >
@@ -87,14 +86,14 @@ class Ingredient extends Component {
                   </h4>
                   <div className="d-flex justify-content-between">
                     {this.state.tab && this.state.subtab
-                      ? data[this.state.tab].ingredients[this.state.subtab].map(
-                          i => (
-                            <div className="text-darkblue subsubtitle  my-3 ">
-                              {" "}
-                              {i}
-                            </div>
-                          )
-                        )
+                      ? data[this.state.tab].ingredients[
+                          this.state.subtab
+                        ].map((i) => (
+                          <div className="text-darkblue subsubtitle  my-3 ">
+                            {" "}
+                            {i}
+                          </div>
+                        ))
                       : ""}{" "}
                   </div>
                 </div>

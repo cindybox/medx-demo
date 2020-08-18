@@ -47,7 +47,7 @@ class Footer extends Component {
                 </li>
               </div>
               <div className="col-md-3 mx-auto pt-3">
-                <div className="col-12 col-md-8 ">
+                <div className="col-12 col-md-8 d-flex ">
                   <a
                     href="https://www.facebook.com/medxpharm"
                     className="social-icon pr-3"
@@ -78,7 +78,7 @@ class Footer extends Component {
             <div className="d-flex justify-content-end ">
               <ButtonRound
                 className="border"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   goToTop();
                 }}

@@ -1,11 +1,11 @@
-import { ButtonRound, ButtonSubmit } from "../components/globals/Button.js";
+import { ButtonSubmit } from "../components/globals/Button.js";
 import React, { Component } from "react";
 
 class TransferRX extends Component {
   state = { rxrows: 0 };
-  addRxRows = e => {
+  addRxRows = (e) => {
     e.preventDefault();
-    this.setState(prevState => ({ rxrows: prevState.rxrows + 1 }));
+    this.setState((prevState) => ({ rxrows: prevState.rxrows + 1 }));
   };
 
   render() {

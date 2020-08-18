@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import classNames from "classnames";
 import styled from "styled-components";
 import { PillTab } from "../../../components/Tab/PillTab";
 import { PillContentContainer } from "../../../components/Tab/PillContentContainer";
@@ -7,11 +6,10 @@ import data from "../data.json";
 const Steps = data.howtostart;
 
 const PatientTypes = ["new", "refill", "transfer"];
-const isActive = [true, false, false];
 
 class HowtoStart extends Component {
   state = { isActive: [true, false, false] };
-  toggleTab = type => {
+  toggleTab = (type) => {
     let index = PatientTypes.indexOf(type);
     let tempActive = [false, false, false];
     tempActive[index] = true;
@@ -21,17 +19,19 @@ class HowtoStart extends Component {
     return (
       <HowtoStartWrapper>
         <div className="container-fluid section-darkblue py-5">
-          <div className="row  py-5">
-            <div className="col-9 mx-auto section-title ">how to start </div>
-            <div className="col-auto col-md-9 mx-auto ">
+          <div className="row  py-2 py-lg-5">
+            <div className="col-11 col-md-9 mx-auto section-title ">
+              how to start
+            </div>
+            <div className="col-11 col-md-9 mx-auto ">
               <PillTab
                 PatientTypes={PatientTypes}
                 isActive={this.state.isActive}
                 toggleTab={this.toggleTab}
                 style={{
                   fontsize: "1.5rem",
-                  width: "10rem",
-                  background: "var(--mainWhite)"
+                  width: "8rem",
+                  background: "var(--mainWhite)",
                 }}
               />
 

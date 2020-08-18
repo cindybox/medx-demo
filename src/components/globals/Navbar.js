@@ -18,7 +18,7 @@ class Navbar extends Component {
         location={this.props.location.pathname.slice(1)}
       >
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link className="nav-brand" to="/" className="ml-5 my-2">
+          <Link className="nav-brand ml-1 ml-md-4 ml-lg-5 my-2" to="/">
             <img
               src={process.env.PUBLIC_URL + "/logo_b.png"}
               width="200rem"
@@ -46,37 +46,38 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse my-2" id="navbarTogglerList">
             <ul className="navbar-nav ml-lg-auto mr-lg-5 mt-2 mt-lg-0 d-flex align-items-center">
-              <li className="nav-item ml-lg-3">
+              <li className="nav-item ml-lg-1 ml-xl-3">
                 <Link to="/aboutus" className="nav-link  text-center">
                   About Us
                 </Link>
               </li>
-              <li className="nav-item ml-lg-3">
+              <li className="nav-item ml-lg-1 ml-xl-3 badge-colorsml-lg-3">
                 <a href="/#howtostart" className="nav-link  text-center">
                   How to Start
                 </a>
               </li>
-              <li className="nav-item ml-lg-3">
+              <li className="nav-item  ml-lg-1 ml-xl-3">
                 <a href="/#service" className="nav-link  text-center">
                   Services
                 </a>
               </li>
-              <li className="nav-item  ml-lg-3 ">
+              <li className="nav-item  ml-lg-1 ml-xl-3">
                 <Link to="/event" className="nav-link  text-center">
                   Events
                 </Link>
               </li>
-
-              <li className="nav-item ml-lg-3  ">
-                <Link to="/refillrx">
-                  <ButtonOrange> Refill RX </ButtonOrange>
-                </Link>
-              </li>
-              <li className="nav-item ml-lg-3  ">
-                <Link to="/transferrx">
-                  <ButtonOrange> Transfer RX </ButtonOrange>
-                </Link>
-              </li>
+              <div className="function-buttons">
+                <li className="nav-item  ml-lg-1 ml-xl-3 ">
+                  <Link to="/refillrx" className="nav-link">
+                    <ButtonOrange> Refill RX </ButtonOrange>
+                  </Link>
+                </li>
+                <li className="nav-item  ml-lg-1 ml-xl-3 ">
+                  <Link to="/transferrx" className="nav-link">
+                    <ButtonOrange> Transfer RX </ButtonOrange>
+                  </Link>
+                </li>
+              </div>
             </ul>
           </div>
         </nav>
@@ -86,11 +87,25 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  z-index: 99;
-  background: ${props =>
+  z-index: 6;
+  background: ${(props) =>
     props.location === "aboutus" ? "var(--lightblue)" : "var(--lightestBlue)"};
   li:hover {
     cursor: pointer;
+  }
+  button,
+  button:hover {
+    border: none;
+  }
+
+  .function-buttons {
+    display: flex;
+  }
+  @media (max-width: 1200px) {
+    .function-buttons {
+      display: block;
+      // flex-flow: column wrap;
+    }
   }
 `;
 
