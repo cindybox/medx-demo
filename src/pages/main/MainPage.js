@@ -1,11 +1,10 @@
 import ScrollableAnchor from "react-scrollable-anchor";
 import React, { Component } from "react";
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner/Banner";
 import HowtoStart from "./Sections/HowtoStart";
 import WhyMedx from "./Sections/WhyMedx";
 import Services from "./Sections/Services";
 import Review from "./Sections/Review";
-import Coupon from "./Sections/Coupon";
 import BannerText from "./BannerText";
 import styled from "styled-components";
 
